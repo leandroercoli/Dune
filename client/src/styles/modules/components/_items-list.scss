@@ -1,0 +1,51 @@
+$thumbnail-size: 75px;
+
+.items-list-container {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  list-style: none;
+
+  li {
+    display: grid;
+    grid-template-columns: $thumbnail-size 1fr;
+    gap: 4px 12px;
+    grid-template-areas:
+      "thumbnail name save"
+      "thumbnail subtitle subtitle"
+      "thumbnail info info";
+    padding: 0.5rem;
+
+    > :nth-child(1) {
+      grid-area: thumbnail;
+      border-radius: 50%;
+      overflow: hidden;
+      width: $thumbnail-size;
+      height: $thumbnail-size;
+
+      > img {
+        object-fit: cover;
+      }
+    }
+
+    > :nth-child(2) {
+      grid-area: name;
+      margin: 0;
+      font-weight: normal;
+      height: 40px;
+      line-height: 40px;
+    }
+
+    > :nth-child(3) {
+      grid-area: subtitle;
+    }
+
+    > :nth-child(4) {
+      grid-area: info;
+    }
+
+    > :nth-child(5) {
+      grid-area: save;
+    }
+  }
+}

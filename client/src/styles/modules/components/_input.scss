@@ -1,0 +1,90 @@
+input,
+select {
+  line-height: $input-height;
+  height: $input-height;
+  padding: 5px 1rem;
+  flex: 1;
+  border: none;
+  background-color: $input-background;
+  color: $default-font-color;
+  font-size: $input-font-size;
+  box-sizing: content-box;
+
+  &::placeholder {
+    font-style: italic;
+  }
+
+  &:focus:not(.button-submit) {
+    outline: none;
+    border: 1px solid $accent-color-light;
+  }
+
+  &:-webkit-autofill {
+    background-color: $input-background !important;
+  }
+
+  &:invalid {
+    border: 1px solid red;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+
+  &.input-with-label,
+  &.input-select {
+    margin-top: 1.5rem;
+  }
+
+  &.input-disabled {
+    opacity: 0.5;
+  }
+
+  + .input-wrapper {
+    // margin-left: 1rem;
+  }
+
+  .end-adornment {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .end-adornment-clickable {
+    cursor: pointer;
+  }
+
+  label {
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+
+    + input,
+    + select {
+      margin: $input-vertical-gap 0;
+    }
+  }
+}
+
+.datepicker-input {
+  width: 100px;
+}
+
+// Fix para que el autocomplete de Chrome no sobreescriba los estilos
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-transition-delay: 99999s;
+}

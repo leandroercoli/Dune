@@ -1,0 +1,25 @@
+.scrollable-list-horizontal {
+  overflow: auto;
+  white-space: nowrap;
+
+  .scrollable-list-thumbnail-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+    margin-right: 1rem;
+
+    > :nth-child(1) {
+      width: 75px;
+      height: 75px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+    > :nth-child(2) {
+      width: 75px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: $dashboard-sidebar-width 1fr;
+  grid-template-rows: $header-height 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content"
+    "sidebar content";
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    grid-template-areas:
+      "header"
+      "content"
+      "content";
+    grid-template-columns: 1fr;
+  }
+}
+
+.content {
+  grid-area: content;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: $default-background-content;
+  color: $default-font-color;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal !important;
+    margin: 0.5rem 1rem;
+  }
+
+  .content-view {
+    background-color: $default-background-content;
+    padding-bottom: 25px !important;
+  }
+
+  .padded-view-horizontal {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .padded-view-vertical {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}

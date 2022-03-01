@@ -1,0 +1,47 @@
+.loader-container {
+  width: 100%;
+  height: 5px;
+  margin: 1rem 0;
+  border-radius: $border-radius;
+  background-color: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  .loader-bar-wrapper {
+    width: 100%;
+    height: 100%;
+    animation: 2s ease infinite load;
+    .loader-bar {
+      background-color: $accent-color;
+      opacity: 0.8;
+      width: 30%;
+      height: 100%;
+    }
+  }
+}
+
+@keyframes load {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.full-screen-loader-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba($default-background-content, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

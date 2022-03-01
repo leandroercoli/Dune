@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "username": "Paul Atreides",
+    "title": "Emperor",
+    "house": "Atreides",
+    "planet": "caladan",
+    "email": "paul.atreides@dune.com",
+    "img": "/public/paul-atreides.jpg"
+  },
+  {
+    "id": 2,
+    "username": "Lady Jessica of the Atreides",
+    "title": "Lady",
+    "house": "Atreides",
+    "planet": "caladan",
+    "email": "lady.jessica@dune.com",
+    "img": "/public/lady-jessica.jpg"
+  },
+  {
+    "id": 3,
+    "username": "Leto Atreides",
+    "title": "Duke",
+    "house": "Atreides",
+    "planet": "caladan",
+    "email": "leto.atreides@dune.com",
+    "img": "/public/leto-atreides.jpeg"
+  },
+  {
+    "id": 4,
+    "username": "Chani",
+    "title": "Fremen",
+    "planet": "arrakis",
+    "house": "Fremen",
+    "email": "chani@dune.com",
+    "img": "/public/chani.jpg"
+  },
+  {
+    "id": 5,
+    "username": "Duncan Idaho",
+    "title": "Swordsmaster",
+    "house": "Atreides",
+    "planet": "caladan",
+    "email": "duncan.idaho@dune.com",
+    "img": "/public/duncan-idaho.jpg"
+  },
+  {
+    "id": 6,
+    "username": "Vladimir Harkonnen",
+    "title": "Baron",
+    "house": "Harkonnen",
+    "planet": "giedi-prime",
+    "email": "vladimir.harkonnen@dune.com",
+    "img": "/public/vladimir-harkonnen.jpg"
+  },
+  {
+    "id": 7,
+    "username": "Glossu Rabban Harkonnen",
+    "title": "Count",
+    "house": "Harkonnen",
+    "planet": "giedi-prime",
+    "email": "glossu.rabban@dune.com",
+    "img": "/public/glossu-rabban-harkonnen.jpg"
+  },
+  {
+    "id": 8,
+    "username": "Stilgar",
+    "title": "Fremen",
+    "planet": "arrakis",
+    "house": "Fremen",
+    "email": "stilgar@dune.com",
+    "img": "/public/stilgar.jpg"
+  },
+  {
+    "id": 9,
+    "username": "Mother Superior",
+    "title": "Reverend Mother",
+    "planet": "wallach-IX",
+    "house": "Bene Gesserit",
+    "email": "mother.superior@dune.com",
+    "img": "/public/mother-superior.jpg"
+  }
+]

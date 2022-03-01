@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.08f7f375.chunk.css",
+    "main.js": "/static/js/main.57904db2.chunk.js",
+    "main.js.map": "/static/js/main.57904db2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.47dc11fa.js",
+    "runtime-main.js.map": "/static/js/runtime-main.47dc11fa.js.map",
+    "static/css/2.ec1d16ac.chunk.css": "/static/css/2.ec1d16ac.chunk.css",
+    "static/js/2.40ed6994.chunk.js": "/static/js/2.40ed6994.chunk.js",
+    "static/js/2.40ed6994.chunk.js.map": "/static/js/2.40ed6994.chunk.js.map",
+    "static/js/3.6dc481cb.chunk.js": "/static/js/3.6dc481cb.chunk.js",
+    "static/js/3.6dc481cb.chunk.js.map": "/static/js/3.6dc481cb.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.ec1d16ac.chunk.css.map": "/static/css/2.ec1d16ac.chunk.css.map",
+    "static/css/main.08f7f375.chunk.css.map": "/static/css/main.08f7f375.chunk.css.map",
+    "static/js/2.40ed6994.chunk.js.LICENSE.txt": "/static/js/2.40ed6994.chunk.js.LICENSE.txt",
+    "static/media/arrakis-poster-2.f61dfd50.jpg": "/static/media/arrakis-poster-2.f61dfd50.jpg",
+    "static/media/arrakis-poster.4735b342.jpg": "/static/media/arrakis-poster.4735b342.jpg",
+    "static/media/clear-icon.700a1c95.svg": "/static/media/clear-icon.700a1c95.svg",
+    "static/media/dune-logo.cef91294.png": "/static/media/dune-logo.cef91294.png",
+    "static/media/logout.42d05bf8.svg": "/static/media/logout.42d05bf8.svg",
+    "static/media/menu.9628c80c.svg": "/static/media/menu.9628c80c.svg",
+    "static/media/user.b5989910.svg": "/static/media/user.b5989910.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.47dc11fa.js",
+    "static/css/2.ec1d16ac.chunk.css",
+    "static/js/2.40ed6994.chunk.js",
+    "static/css/main.08f7f375.chunk.css",
+    "static/js/main.57904db2.chunk.js"
+  ]
+}

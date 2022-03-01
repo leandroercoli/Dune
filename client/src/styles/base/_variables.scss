@@ -1,0 +1,65 @@
+$white: #ffffff;
+$off-white: #cecece;
+$black: #000;
+$grey: #757575;
+$dark-grey: #2b2b2b;
+$red: #f44336;
+$green: #4caf50;
+$danger: #f94346;
+$yellow: #ff9800;
+$blue: #0103a1;
+
+$dune-color: #00796b;
+$dune-color-light: #00acc1;
+
+$primary-color: #ff9800;
+$accent-color: $dune-color;
+$accent-color-light: $dune-color-light;
+
+$gradient-danger: linear-gradient(
+  90deg,
+  rgb(248, 151, 32) 0%,
+  rgb(255, 193, 7) 100%
+);
+$gradient-warning: linear-gradient(
+  90deg,
+  hsla(359, 94%, 62%, 1) 0%,
+  hsla(33, 94%, 55%, 1) 100%
+);
+$gradient-dune: linear-gradient(90deg, $dune-color 0%, $dune-color-light 100%);
+$gradient-info: linear-gradient(
+  90deg,
+  rgb(1, 3, 161) 0%,
+  rgb(36, 32, 248) 100%
+);
+
+$opacity-level: rgba($white, 0.12);
+$opacity-level-dark: rgba($black, 0.12);
+
+$default-font-color: $off-white;
+$default-background: $black;
+$default-background-content: black; // #121317;
+$default-background-content-lighter: #1b1e23;
+$default-background-content-extra-lighter: #282c33;
+$default-background-over-background: #1e1e1ecc;
+
+$default-border-color: rgba(255, 255, 255, 0.2);
+
+$header-height: 64px;
+$footer-height: 50px;
+
+$border-radius: 3px;
+$border-radius-super-round: 16px;
+
+$breakpoint-tablet: 920px;
+$breakpoint-mini-tablet: 400px;
+
+$dashboard-sidebar-width: 200px;
+
+$input-height: 40px;
+$input-vertical-gap: 8px;
+$input-font-size: medium;
+$input-font-size-small: small;
+$input-background: $default-background-over-background;
+
+$button-margin: 8px;

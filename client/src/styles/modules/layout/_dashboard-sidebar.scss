@@ -1,0 +1,86 @@
+.dashboard-sidebar {
+  grid-area: sidebar;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: $default-background;
+  border-right: 1px solid $default-border-color;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: $header-height 1fr auto;
+  grid-template-areas: "logo" "routes" "logout";
+
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    height: $header-height;
+    box-sizing: border-box;
+    grid-area: logo;
+
+    .header-logo {
+      // height: calc(#{$header-height} - .5rem);
+      width: 100%;
+      object-fit: contain;
+      margin: auto;
+    }
+
+    .close-button {
+      display: none;
+      cursor: pointer;
+      @media screen and (max-width: $breakpoint-tablet) {
+        display: initial;
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 2; /* Needs to sit above the hamburger menu icon */
+    transform: translateX(-100%);
+    transition: all 0.6s ease-in-out;
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+
+  .sidebar-content {
+    background-color: $default-background;
+    overflow-y: auto;
+    grid-area: routes;
+    padding-bottom: 2rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      opacity: 0.5;
+      text-decoration: none;
+      color: $default-font-color;
+
+      &.active {
+        opacity: 1;
+        border-right: 3px solid $accent-color;
+        background-color: $opacity-level;
+      }
+
+      span {
+        margin: 0;
+        margin-left: 0.5rem;
+        padding: 0.5rem 0;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .button-logout {
+    grid-area: logout;
+    padding: 0 0.5rem;
+  }
+}

@@ -1,0 +1,23 @@
+.alert-container {
+  padding: 1rem;
+  border-radius: $border-radius;
+  margin: 1.5rem 0;
+
+  &.fail {
+    background-color: rgba($red, 0.2);
+    color: $red;
+  }
+
+  &.info {
+    background: $gradient-dune;
+  }
+
+  &.warning {
+    background: $gradient-danger;
+    color: $black;
+  }
+
+  &.no-margin {
+    margin: 0;
+  }
+}

@@ -1,0 +1,67 @@
+.header {
+  grid-area: header;
+  padding: 1rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $default-background-content;
+  color: $white;
+  border-bottom: 1px solid $default-border-color;
+  user-select: none;
+
+  .header-brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    cursor: pointer;
+
+    .header-logo {
+      height: calc(#{$header-height} - 1.5rem);
+      width: auto; //calc(#{$header-height} - 1.5rem);
+    }
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      justify-content: center;
+    }
+  }
+
+  > div:nth-child(1) {
+    display: none;
+    cursor: pointer;
+    @media screen and (max-width: $breakpoint-tablet) {
+      display: initial;
+    }
+  }
+
+  > div:nth-child(2) {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.user-badge-wrapper {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.user-badge {
+  height: calc(#{$header-height} - 1.5rem);
+  width: calc(#{$header-height} - 1.5rem);
+  cursor: pointer;
+  // border: 2px solid $accent-color;
+  background-color: transparent;
+  // border-radius: 50%;
+  overflow: hidden;
+  // box-sizing: border-box;
+  // padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    color: $accent-color;
+  }
+}

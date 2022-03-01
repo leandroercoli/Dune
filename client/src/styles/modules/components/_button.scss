@@ -1,0 +1,48 @@
+.button-outlined {
+  @extend %button;
+  @include button();
+}
+
+.button-fill {
+  @extend %button-fill;
+  @include button();
+}
+
+.button-text {
+  @extend %button-text;
+  @include button();
+}
+
+.button-text-danger {
+  color: $danger;
+  @include button();
+}
+
+.button-icon {
+  @extend %button-icon;
+  @include button();
+}
+
+.button-submit {
+  @extend %button-submit;
+  @include button();
+}
+
+.button-logout {
+  @extend %button-submit;
+  @include button();
+  background: transparent;
+  color: $dune-color;
+}
+
+.button-full-width {
+  @include button();
+  flex-grow: 1;
+}
+
+.small-button {
+  @include button();
+  line-height: $input-height * 0.75;
+  height: $input-height * 0.75;
+  font-size: $input-font-size-small;
+}

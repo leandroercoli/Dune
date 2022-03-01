@@ -1,0 +1,12 @@
+.github-badge {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  height: calc(#{$header-height} - 1.5rem);
+  width: calc(#{$header-height} - 1.5rem);
+  border-radius: 50%;
+  background-color: $white;
+  cursor: pointer;
+  display: flex;
+  padding: 5px;
+}

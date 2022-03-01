@@ -1,0 +1,35 @@
+@import "base/_variables.scss";
+@import "base/_placeholders.scss";
+@import "base/_mixins.scss";
+@import "~react-datepicker/dist/react-datepicker.css";
+
+// Global styles
+body,
+#root {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $default-font-color;
+  background: $default-background;
+  cursor: default;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+img {
+  @extend %img-full-cover;
+}
+
+@import "modules/_home.scss";
+@import "modules/_login.scss";
+@import "modules/layout/_index.scss";
+@import "modules/components/_index.scss";

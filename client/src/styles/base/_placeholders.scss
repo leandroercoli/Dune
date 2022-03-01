@@ -1,0 +1,114 @@
+@import "_variables.scss";
+
+%img-full-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+%button {
+  cursor: pointer;
+  color: $accent-color;
+  border: 1px solid $accent-color;
+  border-radius: $border-radius;
+  padding: 0.5rem;
+  font-weight: bold;
+  user-select: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:hover,
+  &.active {
+    color: $white;
+    border: 1px solid $accent-color;
+    background-color: rgba($accent-color, 0.5);
+  }
+
+  &.active:hover {
+    border: 1px solid $red;
+    background-color: rgba($red, 0.5);
+  }
+}
+
+%button-fill {
+  cursor: pointer;
+  color: $default-font-color;
+  border: none;
+  background: $gradient-dune;
+  border-radius: $border-radius;
+  user-select: none;
+  line-height: calc(#{$input-height} - 5px);
+  height: $input-height;
+  padding: 3px 8px;
+  margin: $button-margin;
+  font-size: $input-font-size;
+  text-align: center;
+  // text-transform: uppercase;
+  box-sizing: content-box;
+  // font-weight: bold;
+  text-transform: uppercase;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: rgba($accent-color, 0.5);
+  }
+}
+
+%button-text {
+  cursor: pointer;
+  color: $accent-color;
+  border: none;
+  background-color: transparent;
+  user-select: none;
+  line-height: calc(#{$input-height} - 5px);
+  height: $input-height;
+  padding: 3px 8px;
+  margin: $button-margin;
+  font-size: $input-font-size;
+  text-align: center;
+  box-sizing: content-box;
+  // font-weight: bold;
+  text-transform: uppercase;
+}
+
+%button-icon {
+  cursor: pointer;
+  display: flex;
+  box-sizing: content-box;
+  background-color: transparent;
+  user-select: none;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+%button-submit {
+  cursor: pointer;
+  color: $white;
+  border: none;
+  background-color: $accent-color;
+  border-radius: $border-radius;
+  user-select: none;
+  line-height: $input-height;
+  height: $input-height;
+  box-sizing: content-box;
+  padding: 5px 1rem;
+  align-self: stretch;
+  margin: $button-margin 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: $input-font-size;
+}
