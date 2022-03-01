@@ -12,6 +12,7 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "npm run build --prefix client",
+    "install-all": "npm install && npm install --prefix client",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client --production=false && npm run build --prefix client"
   },
   "author": "",
