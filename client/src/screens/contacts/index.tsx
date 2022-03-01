@@ -21,7 +21,7 @@ function Contacts() {
               `House ${contact.house}`,
               `Planet ${planets?.[contact.planet]?.name}`,
             ],
-            save: isSaved,
+            saved: isSaved,
             onSaveClick: isSaved
               ? () => removeFriend(contact.id)
               : () => addFriend(contact.id),

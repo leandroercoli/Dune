@@ -1,14 +1,13 @@
 import { Fragment } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-regular-svg-icons";
-import { faHeart as faHeartSolid } from "@fortawesome/free-solid-svg-icons";
+import Favorite from "@mui/icons-material/Favorite";
+import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 
 type Item = {
   name: string;
   subtitle?: string;
   img?: string;
   info?: string[];
-  save?: boolean;
+  saved?: boolean;
   onSaveClick?: () => void;
 };
 
@@ -34,10 +33,7 @@ export default function ItemsList({
             </div>
             {withSave && (
               <div style={{ cursor: "pointer" }} onClick={item.onSaveClick}>
-                <FontAwesomeIcon
-                  icon={item.save ? faHeartSolid : faHeart}
-                  size="lg"
-                />
+                {item.saved ? <Favorite /> : <FavoriteBorder />}
               </div>
             )}
           </li>

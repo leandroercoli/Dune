@@ -41,6 +41,7 @@ export const useAuth = () => {
   }, [isLoginSuccessful, push]);
 
   const logout = () => {
+    localStorage.clear();
     dispatch(handleLogout());
     push("/");
   };

@@ -1,7 +1,9 @@
 import { useState, MouseEvent } from "react";
 import LOGO_IMG from "assets/img/dune-logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import Icon from "components/icons";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Input from "components/input";
 import { getBackground } from "./utils";
 import { useAuth } from "hooks/useAuth";
@@ -35,22 +37,23 @@ function Login() {
             onChange={(u: string) => setEmail(u)}
             required
             endAdornment={
-              <FontAwesomeIcon
-                icon={faUser}
-                size="lg"
-                opacity={email ? 1 : 0.5}
-              />
+              <div style={{ display: "contents", opacity: email ? 1 : 0.5 }}>
+                <Icon name="user" />
+              </div>
             }
           />
           <Input
             endAdornment={
-              <FontAwesomeIcon
-                icon={isPasswordVisible ? "eye" : "eye-slash"}
-                size="lg"
+              <div
                 className="end-adornment-clickable"
+                style={{
+                  display: "contents",
+                  opacity: isPasswordVisible ? 1 : 0.5,
+                }}
                 onClick={togglePasswordVisibility}
-                opacity={isPasswordVisible ? 1 : 0.5}
-              />
+              >
+                {isPasswordVisible ? <VisibilityIcon /> : <VisibilityOffIcon />}
+              </div>
             }
             onChange={(p: string) => setPassword(p)}
             required
@@ -64,7 +67,7 @@ function Login() {
             onClick={handleSubmit}
           >
             Sign in
-            <FontAwesomeIcon icon="arrow-right" size="lg" />
+            <ChevronRightIcon />
           </button>
           {isLoginRejected && (
             <Alert severity="fail" className="no-margin">
