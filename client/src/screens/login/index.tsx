@@ -5,7 +5,7 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import Input from "components/input";
-import { getBackground } from "./utils";
+import BACKGROUND_IMG_1 from "assets/img/arrakis-poster.jpg";
 import { useAuth } from "hooks/useAuth";
 import Alert from "components/alert";
 import { useToggle } from "hooks/useToggle";
@@ -77,7 +77,7 @@ function Login() {
         </form>
       </div>
       <img
-        src={getBackground()}
+        src={BACKGROUND_IMG_1}
         alt="login background"
         className="background"
       />
