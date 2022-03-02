@@ -16,8 +16,7 @@ const login = async (req, res = response) => {
       token: `Bearer ${token}`,
       userid: user?.id,
     });
-  }
-  return res.sendStatus(401);
+  } else res.sendStatus(401);
 };
 
 module.exports = {

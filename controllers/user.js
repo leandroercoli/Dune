@@ -10,7 +10,7 @@ const getUser = async (req, res = response) => {
       user,
     });
   }
-  return res.sendStatus(404);
+  else res.sendStatus(404);
 };
 
 module.exports = {
