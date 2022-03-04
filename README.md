@@ -1,7 +1,7 @@
 # NodeReact
 Web application to showcase how to integrate React, Node.js and Express.
 
-Frontend uses Redux and Redux Toolkit for interaction with the backend.
+Frontend is written in React + TypeScript, and uses Redux and Redux Toolkit for interaction with the backend.
 
 # Running the application
 1 - Set PORT and TOKEN_SECRET on .env. PORT number should match the port set on "proxy" property of /client/package.json. TOKEN_SECRET can be created with command: 
