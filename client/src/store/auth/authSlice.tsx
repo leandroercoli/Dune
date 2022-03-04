@@ -17,9 +17,6 @@ const slice = createSlice({
     user: undefined,
   } as AuthState,
   reducers: {
-    setToken(state, action: PayloadAction<string>) {
-      state.token = action.payload;
-    },
     logout(state) {
       state.user = undefined;
       state.token = "";
@@ -49,4 +46,4 @@ export const selectUser = (state: RootState) => state.auth.user;
 export const selectUserId = (state: RootState) => state.auth.userid;
 export const selectToken = (state: RootState) => state.auth.token;
 
-export const { setToken, logout } = slice.actions;
+export const { logout } = slice.actions;
